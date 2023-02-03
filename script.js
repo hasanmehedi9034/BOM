@@ -31,5 +31,20 @@
 //     history.forward()
 // }
 
-console.log(navigator.onLine)
+// console.log(navigator.onLine)
+
+// alert('Hello');
+// if (confirm()) {
+//     console.log('You pressed OK')
+// }
+// else {
+//     console.log('You pressed cancel')
+// }
+// console.log(prompt('Type your age', 'Mehedi'))
+if (prompt('Please enter Your name: ')) {
+    console.log('you type your name')
+}
+else {
+    console.log('Not')
+}
 
