@@ -23,11 +23,13 @@
 // console.log(location.port)
 // console.log(locaiton.assign('https://www.google.com'))
 
-function back() {
-    history.back();
-}
+// function back() {
+//     history.back();
+// }
 
-function forward() {
-    history.forward()
-}
+// function forward() {
+//     history.forward()
+// }
+
+console.log(navigator.onLine)
 
