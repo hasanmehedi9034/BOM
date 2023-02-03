@@ -16,10 +16,18 @@
 //     myWindow.close();
 // }
 
-console.log(location.href);
-console.log(location.hostname);
-console.log(location.pathname);
-console.log(location.protocol);
-console.log(location.port)
-console.log(locaiton.assign('https://www.google.com'))
+// console.log(location.href);
+// console.log(location.hostname);
+// console.log(location.pathname);
+// console.log(location.protocol);
+// console.log(location.port)
+// console.log(locaiton.assign('https://www.google.com'))
+
+function back() {
+    history.back();
+}
+
+function forward() {
+    history.forward()
+}
 
