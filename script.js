@@ -41,10 +41,16 @@
 //     console.log('You pressed cancel')
 // }
 // console.log(prompt('Type your age', 'Mehedi'))
-if (prompt('Please enter Your name: ')) {
-    console.log('you type your name')
-}
-else {
-    console.log('Not')
-}
+// if (prompt('Please enter Your name: ')) {
+//     console.log('you type your name')
+// }
+// else {
+//     console.log('Not')
+// }
+
+// setTimeOut
+// setInterval(function)
+
+
+
 
