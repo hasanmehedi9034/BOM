@@ -58,40 +58,59 @@
 // const getNameCookie = document.querySelector('#get-name-cookie')
 // const getUsernameCookie = document.querySelector('#get-username-cookie')
 
-function setCookie(cookieName, cookieValue, exDays) {
-    const d = new Date();
-    d.setTime(d.getTime() + exDays * 24 * 60 * 60 * 1000);
+// function setCookie(cookieName, cookieValue, exDays) {
+//     const d = new Date();
+//     d.setTime(d.getTime() + exDays * 24 * 60 * 60 * 1000);
 
-    let expires = "expries=" + d.toUTCString();
+//     let expires = "expries=" + d.toUTCString();
 
-    document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/"
-}
+//     document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/"
+// }
 
-function getCookie(cookieName) {
-    let cookieArray = document.cookie.split(";");
-    let name = cookieName + "=";
+// function getCookie(cookieName) {
+//     let cookieArray = document.cookie.split(";");
+//     let name = cookieName + "=";
 
-    for (let i = 0; i < cookieArray.length; i++) {
-        let c = cookieArray[i].trim();
+//     for (let i = 0; i < cookieArray.length; i++) {
+//         let c = cookieArray[i].trim();
 
-        if (c.indexOf(name) > -1) {
-            return (c.substring(name.length));
-        }
+//         if (c.indexOf(name) > -1) {
+//             return (c.substring(name.length));
+//         }
+//     }
+
+//     return false;
+// }
+
+// function checkCookie(name) {
+//     let cookieValue = getCookie(name);
+
+//     if (!cookieValue) {
+//         setCookie('name', 'mehedi', 2);
+//     }
+//     else {
+//         console.log('welcome back ' + cookieValue);
+//     }
+// }
+
+function validation() {
+    const inputObj = document.getElementById('1d1');
+
+    if (inputObj.validity.rangeOverflow) {
+        inputObj.setCustomValidity('You give overflow')
+    }
+    else if(inputObj.validity.rangeUnderflow) {
+        inputObj.setCustomValidity('You give underflow')
+    }
+    else if(inputObj.validity.valueMissing) {
+        inputObj.setCustomValidity('value missing')
     }
 
-    return false;
-}
-
-function checkCookie(name) {
-    let cookieValue = getCookie(name);
-
-    if (!cookieValue) {
-        setCookie('name', 'mehedi', 2);
+    if(!inputObj.checkValidity()) {
+        document.getElementById('demo').innerHTML = inputObj.validationMessage
     }
     else {
-        console.log('welcome back ' + cookieValue);
+        document.getElementById('demo').innerHTML = inputObj.validationMessage
     }
 }
-
-
 
