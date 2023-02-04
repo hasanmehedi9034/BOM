@@ -133,3 +133,18 @@
 
 
 // web worker
+
+const display = document.getElementById('display');
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }   
+    else {
+        display.innerHTML('Geolocation is not available')
+    }
+}
+
+function showPosition(position) {
+    display.innerHTML = position.coords.latitude + ", " + position.coords.longitude
+}
