@@ -93,24 +93,40 @@
 //     }
 // }
 
-function validation() {
-    const inputObj = document.getElementById('1d1');
+// function validation() {
+//     const inputObj = document.getElementById('1d1');
 
-    if (inputObj.validity.rangeOverflow) {
-        inputObj.setCustomValidity('You give overflow')
-    }
-    else if(inputObj.validity.rangeUnderflow) {
-        inputObj.setCustomValidity('You give underflow')
-    }
-    else if(inputObj.validity.valueMissing) {
-        inputObj.setCustomValidity('value missing')
-    }
+//     if (inputObj.validity.rangeOverflow) {
+//         inputObj.setCustomValidity('You give overflow')
+//     }
+//     else if(inputObj.validity.rangeUnderflow) {
+//         inputObj.setCustomValidity('You give underflow')
+//     }
+//     else if(inputObj.validity.valueMissing) {
+//         inputObj.setCustomValidity('value missing')
+//     }
 
-    if(!inputObj.checkValidity()) {
-        document.getElementById('demo').innerHTML = inputObj.validationMessage
-    }
-    else {
-        document.getElementById('demo').innerHTML = inputObj.validationMessage
-    }
+//     if(!inputObj.checkValidity()) {
+//         document.getElementById('demo').innerHTML = inputObj.validationMessage
+//     }
+//     else {
+//         document.getElementById('demo').innerHTML = inputObj.validationMessage
+//     }
+// }
+
+
+function setLocalStorage(key, value) {
+    localStorage.setItem(key, value);
 }
 
+function getLocalStorage(key) {
+    console.log(localStorage.getItem(key));
+}
+
+function removeLocalStorage(key) {
+    localStorage.removeItem(key);
+}
+
+function clearLocalStorage() {
+    localStorage.clear();
+}

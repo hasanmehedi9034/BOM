@@ -53,10 +53,14 @@
         <input type="submit" value="check cookie" onclick="checkCookie('name')">
     </div> -->
 
-    <input type="number" id="1d1" min="100" max="300" required>
+    <!-- <input type="number" id="1d1" min="100" max="300" required>
     <button onclick="validation()">OK</button>
+    <p id="demo"></p> -->
 
-    <p id="demo"></p>
+    <p><button onclick="setLocalStorage('username', 'sumit')">Set local storage username</button></p>
+    <p><button onclick="getLocalStorage('username')">get local storage username</button></p>
+    <p><button onclick="clearLocalStorage()">Clear Local Storage</button></p>
+
 
     <script src="./script.js"></script>
 </body>
