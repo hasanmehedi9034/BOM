@@ -113,20 +113,23 @@
 //         document.getElementById('demo').innerHTML = inputObj.validationMessage
 //     }
 // }
+ 
+
+// function setLocalStorage(key, value) {
+//     localStorage.setItem(key, value);
+// }
+
+// function getLocalStorage(key) {
+//     console.log(localStorage.getItem(key));
+// }
+
+// function removeLocalStorage(key) {
+//     localStorage.removeItem(key);
+// }
+
+// function clearLocalStorage() {
+//     localStorage.clear();
+// }
 
 
-function setLocalStorage(key, value) {
-    localStorage.setItem(key, value);
-}
-
-function getLocalStorage(key) {
-    console.log(localStorage.getItem(key));
-}
-
-function removeLocalStorage(key) {
-    localStorage.removeItem(key);
-}
-
-function clearLocalStorage() {
-    localStorage.clear();
-}
+// web worker
